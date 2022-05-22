@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#container {
+  background-image: url('/images/bg-pattern-top.svg'),url('/images/bg-pattern-bottom.svg');
+background-repeat: no-repeat;
+background-size: auto,auto; 
+background-position: left -300px top -550px, right -85% bottom 170%;
+}
+
+@media(max-width: 640px ){
+  #container {
+    background-position: left -500px top -500px, right -550px  bottom -450px;
+  }
+}
